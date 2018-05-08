@@ -70,7 +70,7 @@ favoriteThings.book = 'Harry Potter'
 backPack = {};
 var item = 'firstPocket';
 backPack[item] = 'chapstick';
-backPack.color = 'blue'
+backPack.color = 'blue';
 backPack;
 
 
@@ -88,7 +88,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-//Code here
+console.log(backPack);
 
 
 
@@ -111,7 +111,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -123,7 +124,7 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
-//Code Here
+methodCollection = {};
 
 
 
@@ -132,15 +133,16 @@ var user2 = {
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-//Code Here
-
+methodCollection.alertHello = function alertHello(){ alert('hello')};
+methodCollection.logHello = function logHello() { console.log('hello')};
 
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+methodCollection.alertHello; //?
+methodCollection.logHello; //?
 
 
 
@@ -151,7 +153,13 @@ var user2 = {
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson(name, birthday, ssn) {
+  return person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+};
 
 
 
@@ -162,6 +170,12 @@ var user2 = {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return creditCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode,
+  }
+};
 
 
